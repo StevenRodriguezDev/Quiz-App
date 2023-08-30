@@ -1,0 +1,72 @@
+game plan
+
+create a repo 
+create file structire 
+        assets ---- style.css logic.js
+        index.html
+        highscores.html
+        readme.md
+        .gitignore
+
+project pieces
+    set up html structure
+    hoooking up js and css files to html 
+
+HTML
+        link to highscores page - link back - anchor tag
+        creat 3 sections in index file 
+        1.start section
+                -startbutton
+                        attach event listener 
+                        timer start
+                        show quiz section
+                        display question
+        2.quiz section 
+                -array of objects
+                var questions = [
+                        {
+                                title: 'first question
+                                choices: ["red","green","yellow","blue"]
+                                answer: 'red'
+                        },
+                        {
+                                title: 'first question
+                                choices: ["red","green","yellow","blue"]
+                                answer: 'red'
+                        },
+                        {
+                                title: 'first question
+                                choices: ["red","green","yellow","blue"]
+                                answer: 'red'
+                        }
+                ]
+                Build a display question function
+                attaching click events to each option in html
+                when clicked check if answer is right or wrong
+                if right - display correcr *optional
+                if wrong - decrement timer/score
+                timer/score <=0
+                        if 0 game ends, if <= 0 
+                        if last question 
+                                display results
+                        else next question
+        3.results section
+                form or input with a button
+                when button is clicked
+                        grab scorfe and initials and store in localstorage
+                        recommned data structure
+                        [
+                                {
+                                initials: 'jim',
+                                score: 50
+                                }
+                        ]
+        show start sections and hide other 2 sections
+        ?? how to hide it
+
+
+        display all scores in desc order from local storage
+        highscores.js files 
+
+
+    
