@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+/* main css */
+body {
+  background-color: rgb(19, 19, 19);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "inter", sans-serif;
+}
+
+#container {
+  border-radius: 30px;
+  width: 400px;
+  max-height: 600px;
+  border: 1px solid rgb(162, 160, 160);
+  overflow: hidden;
+  background-color: #363535;
+  color: azure;
+}
+
+.header {
+  background-color: #363535;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #77a8f3;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  border-bottom: 1px solid grey;
+}
+ol {
+  padding: 10px 15px 10px 40px;
+}
+li {
+  font-size: 14px;
+  margin: 5px 0;
+  /* padding: 0 20px; */
+}
+
+#start-quiz-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background-color: #77a8f3;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+  padding: 15px 20px;
+}
+
+button:hover {
+  background-color: #77a8f3;
+}
+
+/* main quiz */
+
+.content {
+  padding: 10px 30px;
+  max-width: 400px;
+  overflow: auto;
+}
+
+.question {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 3px;
+}
+
+.option {
+  min-height: 40px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.52);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 13px;
+  cursor: pointer;
+  color: rgb(210, 210, 210);
+  margin: 8px 0;
+  font-weight: 500;
+  position: relative;
+}
+.option span {
+  position: absolute;
+  right: 15px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #77a8f3;
+  color: #363535;
+  padding: 5px;
+}
+.correct {
+  background-color: #77f392;
+  color: rgb(0, 0, 0);
+}
+.correct span {
+  background: #77f392;
+  color: rgb(0, 0, 0);
+}
+.wrong {
+  background-color: rgb(167, 52, 52);
+}
+.wrong span {
+  background-color: rgb(167, 52, 52);
+  color: #fcf8f8;
+}
+
+.option:hover {
+  background-color: #77a8f3;
+  color: #363535;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0;
+}
+#timer {
+  height: 40px;
+  padding: 0 10px;
+  background-color: rgb(210, 210, 210);
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+}
