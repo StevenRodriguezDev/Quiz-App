@@ -81,6 +81,27 @@ button:hover {
   padding: 5px 3px;
 }
 
+/* #option-container:hover {
+  transform: scale(2px);
+  background-color: #77a8f3;
+} */
+#option-container {
+  min-height: 40px;
+  border-radius: 10px;
+  /*
+  background-color: rgba(128, 128, 128, 0.52);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 13px;
+  cursor: pointer;
+  color: rgb(210, 210, 210);
+  margin: 8px 0;
+  font-weight: 500;
+  position: relative; 
+  */
+}
+
 .option {
   min-height: 40px;
   border-radius: 10px;
@@ -105,6 +126,13 @@ button:hover {
   color: #363535;
   padding: 5px;
 }
+.option:hover {
+  /* background-color: #77a8f3;
+  color: #363535;  */
+  box-shadow: 1px 5px 5px #77a8f3;
+}
+
+/* correct & wrong */
 .correct {
   background-color: #77f392;
   color: rgb(0, 0, 0);
@@ -121,16 +149,11 @@ button:hover {
   color: #fcf8f8;
 }
 
-.option:hover {
-  background-color: #77a8f3;
-  color: #363535;
-}
-
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   margin: 15px 0;
 }
 #timer {
@@ -144,3 +167,4 @@ button:hover {
   font-size: 13px;
   font-weight: 500;
 }
+/* hud */
