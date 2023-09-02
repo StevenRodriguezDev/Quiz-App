@@ -49,7 +49,7 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= max_questions) {
-    return window.location.assign("/end.html");
+    return window.location.assign("./scores.html");
   }
 
   questionCounter++;
@@ -95,3 +95,14 @@ incrementScore = (num) => {
   scoreText.innerText = score;
 };
 startGame();
+
+// score page
+
+const username = document.getElementById("username");
+username.addEventListener("keyup", () => {
+  console.log(username.value);
+});
+saveHighscore = (e) => {
+  console.log("saved");
+  e.preventDefault();
+};
