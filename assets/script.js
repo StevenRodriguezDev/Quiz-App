@@ -39,6 +39,14 @@ let questions = [
 const correct_bonus = 10;
 const max_questions = 3;
 // ============= functions ==========
+// showGame = () => {
+//   let game = document.getElementsByClassName("gameStart");
+//   if (game.style.display === "none") {
+//     game.style.display = "block";
+//   }
+//   //   document.getElementsByClassName("gameStart").style.display = "block";
+// };
+
 startGame = () => {
   questionCounter = 0;
   score = 0;
@@ -49,6 +57,8 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= max_questions) {
+    localStorage.setItem("mostRecentScore", score);
+    //goes to end of game page
     return window.location.assign("./scores.html");
   }
 
@@ -98,11 +108,11 @@ startGame();
 
 // score page
 
-const username = document.getElementById("username");
-username.addEventListener("keyup", () => {
-  console.log(username.value);
-});
-saveHighscore = (e) => {
-  console.log("saved");
-  e.preventDefault();
-};
+// const username = document.getElementById("username");
+// username.addEventListener("keyup", () => {
+//   console.log(username.value);
+// });
+// saveHighscore = (e) => {
+//   console.log("saved");
+//   e.preventDefault();
+// };
