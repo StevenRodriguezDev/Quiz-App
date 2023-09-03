@@ -46,10 +46,12 @@ li {
 
 #start-quiz-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
-
+/* .gameStart {
+  display: none;
+} */
 start-quiz {
   background-color: #77a8f3;
   border: none;
@@ -88,7 +90,9 @@ start-quiz {
   color: black;
   padding: 15px 20px;
 } */
-
+a {
+  text-decoration: none;
+}
 a.button {
   display: flex;
   justify-content: center;
