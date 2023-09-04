@@ -4,7 +4,7 @@
 
 Quiz your programing skills.
 
-- What was your motivation:To host all my projects in one place
+- What was your motivation: To create an App to test your programing skills
 
 ## Table of Contents (Optional)
 
