@@ -9,6 +9,20 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+let count = 20;
+
+var interval = setInterval(function () {
+  document.getElementById("timer").innerHTML =
+    "Time left: " + count + " seconds";
+  count--;
+  if (count === 0) {
+    clearInterval(interval);
+    document.getElementById("timer").innerHTML = "Time left:" + count;
+    // or...
+    alert("Time is up!");
+  }
+}, 1000);
+
 let questions = [
   {
     question: "what does HTML stand for",
@@ -51,6 +65,8 @@ startGame = () => {
   questionCounter = 0;
   score = 0;
   availableQuestions = [...questions];
+  //   clearInterval(countdown);
+  //   timerDisplay();
   //   console.log(availableQuestions);
   getNewQuestion();
 };
